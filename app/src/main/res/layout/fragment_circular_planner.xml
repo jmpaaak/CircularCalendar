@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/planner_container"
+    tools:context="com.example.jongmin.circularplanner.CircularPlannerActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
+        <com.example.jongmin.circularplanner.view.CircularPlannerBorderView
+            android:id="@+id/border_planner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:radius="170dp"
+            app:sub_line_length="8dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.example.jongmin.circularplanner.view.CircularPlannerView
+            android:id="@+id/planner"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:radius="140dp"
+            android:layout_gravity="center" />
+
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content">
+
+            <com.example.jongmin.circularplanner.view.CircularPlannerInnerView
+                android:id="@+id/inner_planner"
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:radius="70dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_text_container"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:text="2016"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/year"
+                    android:textSize="12dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginTop="2.5dp" />
+
+                <TextView
+                    android:text="12.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/month_day"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginTop="2.5dp"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:text="일요일"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/day_text"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginTop="2.5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plan_name"
+                    android:visibility="invisible"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="10:10 ~ 15:30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plan_time"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

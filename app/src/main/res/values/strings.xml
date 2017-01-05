@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Circular Plandar</string>
+    <string name="title_activity_calendar">Circular Plandar - Calendar</string>
+    <string name="db_reset">데이터 초기화</string>
+    <string name="push_on_off">푸쉬 알람 켜기/끄기</string>
+
+    <string name="title_activity_cirular_planner">Circular Plandar</string>
+</resources>

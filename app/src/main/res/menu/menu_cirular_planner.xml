@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jongmin.circularplanner.CircularPlannerActivity">
+    <item
+        android:id="@+id/db_reset"
+        android:orderInCategory="100"
+        android:title="@string/db_reset"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/push_on_off"
+        android:orderInCategory="100"
+        android:title="@string/push_on_off"
+        app:showAsAction="never" />
+</menu>
